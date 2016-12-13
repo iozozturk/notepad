@@ -1,0 +1,11 @@
+Actors
+
+- Builtin Identify message to identify actors
+-
+
+- Dispatchers:
+  - Balancing: Multiple actors sharing single mailbox, DP routes messages to only idle workers
+  - SmallestMailboxRouter: DP routes messages immediately with respecting the smallest mailbox of individual workers
+
+TIPS
+ - Use verbs for messages

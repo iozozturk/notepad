@@ -1,0 +1,3 @@
+Google Cloud
+
+- Gcloud client registration is done from terminal to chrome, at terminal it opened webserver then triggered chrome, top auth. Then called localhost:8085 with token to take the token from browser

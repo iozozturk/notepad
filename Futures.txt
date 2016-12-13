@@ -1,0 +1,8 @@
+Futures
+
+  - for nested futures waiting each other use "for" comprehension
+  - use scala.concurrent.blocking block to instruct ec that this is a blocking call
+    will add additional threads to the pool
+  - Promise is used in libraries to manually create async func and futures
+  - Independent futures can be fired outside for, for parallelizing
+  - Seperate execution context on

@@ -1,0 +1,29 @@
+Reactive Bootcamp
+
+- Topics
+  - Introduction to Reactive Programming
+  - Actor based Programming (Akka)
+  - Reactive Streams (Akka Streams)
+  - Non-blocking, Futures&Promises, Asynchronous
+  - 
+
+- TODO
+  -
+
+
+Slides
+ - Ex: for actors: touching each other, communicating in a joyful harmony Cem Yilmaz
+ - Motivation: IOT, many devices interacting and feeding each other
+ - Google reactive: reactive meaning non blocking event driven
+ - Reactive Manifesto: defines outcome, quality of reactive systems
+ - Reactive tools: RX, Reactive streams, Javas 8 Lambdas
+ -
+
+Backpressure
+ - If source is hot-not controllable sub will drop or buffer
+
+http://www.slideshare.net/kvnwbbr/what-is-reactive-programming
+
+- Actors
+  - State machines with actor.become, behaviour
+  -
