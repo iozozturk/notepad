@@ -18,6 +18,18 @@
 * stop and start subprocesses of
 * and get lists of running processes of a supervisord.
 
+#### installation
+* pip install supervisor
+* echo_supervisord_conf > /etc/supervisord.conf to echo sample conf
+
+#### running
+* [program:foo]
+command=/bin/cat ;sample program
+* supervisord ;to run
+
+#### configuration
+
+
 ### Features
 #### Simple
 
