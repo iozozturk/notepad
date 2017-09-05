@@ -18,9 +18,32 @@
 * stop and start subprocesses of
 * and get lists of running processes of a supervisord.
 
-#### installation
+#### installation https://gist.github.com/fadhlirahim/78fefdfdf4b96d9ea9b8
 * pip install supervisor
 * echo_supervisord_conf > /etc/supervisord.conf to echo sample conf
+* sudo vi /Library/LaunchDaemons/com.agendaless.supervisord.plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    <key>Label</key>
+    <string>com.agendaless.supervisord</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/supervisord</string>
+        <string>-n</string>
+        <string>-c</string>
+        <string>/usr/local/share/supervisor/supervisord.conf</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
 
 #### running
 * [program:foo]
